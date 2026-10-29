@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topIcons">
+                <span><i class="fa-solid fa-chevron-left"></i></span>       
+                <span><i class="fa-solid fa-bars"></i></span>
+                </div>
+        <div class="songImage">
+            <img id="songImage" src="images/songImage.jpg" alt="songImage">
+        </div>
+        <div class="songName">
+            <h2 id="songTitle">Song Name</h2>
+            <h3 id="artistName">Artist Name</h3>
+        </div>
+     <div class="slider">
+    <span id="current-time">0:00</span>
+    <input type="range" id="progress" value="0" min="0" max="100">
+    <span id="duration">0:00</span>
+</div>
+            <div class="songControls">
+                <span id="previousButton"><i class="fa-solid fa-step-backward"></i></span>
+                <span id="playButton"><i class="fa-solid fa-play"></i></span>
+                <span id="nextButton"><i class="fa-solid fa-step-forward"></i></span>
+            </div>
+    </div>
+    <audio id="audio" src=""></audio>
+    <script src="script.js"></script>
+
+</body>
+</html> 
